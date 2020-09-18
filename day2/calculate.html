@@ -1,0 +1,36 @@
+<html>
+    <body>
+        <div style="background-color: aqua;width: 300px;height: 210px;text-align: center;">
+            <h1>Calculator</h1>
+            input 1:<input type="text" id="c"><br><br>
+            input 2:<input type="text" id="d"><br>
+            <p id="ans"></p>
+            <button onclick="add()">ADD</button>
+            <button onclick="sub()">SUBTRACT</button>
+            <button onclick="multi()">MULTIPLY</button>
+            <button onclick="divi()">DIVIDE</button>
+            <script>
+            function add(){
+                var c= document.getElementById("c").value;
+                var d= document.getElementById("d").value;
+                var e= parseInt(c) + parseInt(d);
+                document.getElementById("ans").innerHTML=c+" + "+d+" = "+e;           }
+                function sub(){
+                    var c= document.getElementById("c").value;
+                var d= document.getElementById("d").value;
+                var e= parseInt(c) - parseInt(d);
+                document.getElementById("ans").innerHTML=c+" - "+d+" = "+e;           }
+                function multi(){
+                    var c= document.getElementById("c").value;
+                var d= document.getElementById("d").value;
+                var e= parseInt(c) * parseInt(d);
+                document.getElementById("ans").innerHTML=c+" * "+d+" = "+e;           }
+                function divi(){
+                    var c= document.getElementById("c").value;
+                var d= document.getElementById("d").value;
+                var e= parseInt(c) / parseInt(d);
+                document.getElementById("ans").innerHTML=c+" / "+d+" = "+e;           }
+        </script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+    <body>
+        a:<input type="text" id="c"><br><br>;
+        b:<input type="text" id="d"><br>;
+        <p id="ans"></p>
+        <button onclick="calculate()">calculate</button>
+        <script>
+           // var a=5;
+            //var b=3;
+
+            function calculate(){
+               // document.getElementById("ans").innerHTML=(a+b);
+                //console.log("advsh".document);
+                var c= document.getElementById("c").value;
+                var d= document.getElementById("d").value;
+                var e= parseInt(c) + parseInt(d);
+                document.getElementById("ans").innerHTML=e;           }
+        </script>
+    </body>
+</html>

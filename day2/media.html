@@ -1,0 +1,39 @@
+<html>
+<style>
+    .mydiv{
+        width:200px;
+        background: lightseagreen;
+        height:200px;
+    }
+    @media only screen and (min-width: 200px){
+        .mydiv{
+            background: lime;
+            height:300px;
+        }
+    }
+    @media only screen and (min-width:280px) {
+            .mydiv {
+                background: brown;
+                height: 300px;
+            }
+        }
+        @media only screen and (min-width:338px) {
+            .mydiv {
+                background: coral;
+                height: 300px;
+            }
+        }
+        @media only screen and (min-width:500px) {
+            .mydiv {
+                background: darkgoldenrod;
+                height: 300px;
+            }
+        }
+</style>
+<body>
+
+    <div class="mydiv">
+        media query
+    </div>
+</body>
+</html>

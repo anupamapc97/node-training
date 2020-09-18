@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(51, 49, 49);
+}
+h1{
+    text-align: center;
+    font-size: 80px;
+    color: white;
+    margin-top: 50px;
+}
+#leftbox{
+    float: left;
+    background: grey;
+    height:300px;
+    width:30%;
+}
+#rightbox{
+    float: right;
+    background:oldlace;
+    height:300px;
+    width:70%;
+}
