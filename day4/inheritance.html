@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <button onclick="mycar.getModel()">alert</button>
+        <script>
+            class Brand{
+                constructor(){
+                    this.Brand="Maruthi"
+                }
+            }
+            class Car extends Brand{
+                constructor(model){
+                    super()
+                    this.model=model
+                }
+                getModel(){
+                    alert(this.Brand+" "+this.model)
+                }
+            }
+            var mycar=new Car("swift")
+            console.log(mycar)
+        </script>
+    </body>
+</html>
