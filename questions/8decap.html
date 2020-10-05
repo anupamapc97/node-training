@@ -1,0 +1,16 @@
+<html>
+    <head>DECAPITALIZE FIRST LETTER OF A STRING</head><br>
+    <BODY>
+        enter a string:<input type="text" id="str">
+        <p id="ans"></p>
+        <button onclick="str()">click</button>
+        <script>
+            function str(){
+                var a=document.getElementById("str").value;
+                // var a="Helooo everyone welcome"
+                var b=a.charAt(0).toLowerCase()+a.slice(1)
+                document.getElementById("ans").innerHTML=b
+            }
+       </script>
+    </BODY>
+ </html>

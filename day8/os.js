@@ -1,0 +1,10 @@
+const a=require('os')
+
+console.log("free memory",a.freemem())
+console.log("home directory",a.homedir())
+console.log("hostname",a.hostname())
+console.log("home directory",a.platform())
+console.log("release",a.release())
+console.log("release",a.tmpdir())
+console.log("release",a.totalmem())
+console.log("release",a.type())

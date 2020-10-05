@@ -1,0 +1,24 @@
+<html>
+    <!-- <scrpit src="leap.js"></scrpit> -->
+    <body>
+        input_a_year:<input type="text" id="a"/><br>
+        <!-- var b=document.getElementById("a").value; -->
+        <button onclick="leapyr()">check whether leap year</button>
+        <script>
+         var b=document.getElementById("a").value;
+              function leapyr(){
+    // var b=document.getElementById("a").value;
+    var a=parseInt(b)
+    if(a%400==0){
+        document.getElementById("ans").innerHTML=a+" "+"is a leap year"
+    }
+    else if((a%100!=0)&&(a%4==0)){
+     document.getElementById("ans").innerHTML=a+" "+"is a leap year"
+    }
+    else {
+    document.getElementById("ans").innerHTML=a+" "+"is not a leap year"
+    }}
+        </script>
+        <p id="ans"></p>
+    </body>
+</html>

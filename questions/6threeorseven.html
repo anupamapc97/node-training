@@ -1,0 +1,20 @@
+<html>
+    <head>CHECK WHETHER A MULTIPLE OF 3 OR 7 </head><br>
+    <BODY>
+        enter a number:<input type="number" id="a">
+        <button onclick="func()">click</button>
+        <p id="ans"></p>
+        <p id="anss"></p>
+        <script>
+            function func(){
+                var a=document.getElementById("a").value
+                if(parseInt(a)%3==0){
+                    document.getElementById("ans").innerHTML=a+" "+"is a multiple of 3"
+                }
+                if(parseInt(a)%7==0){
+                    document.getElementById("anss").innerHTML=a+" "+"is a multiple of 7"
+                }
+            }
+        </script>
+    </BODY>
+</html>

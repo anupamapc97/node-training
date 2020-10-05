@@ -1,0 +1,41 @@
+<html>
+    <body>
+        <div style="background-color: aqua;width: 300px;height: 210px;text-align: center;">
+            <h1>Calculator</h1>
+            input 1:<input type="text" id="c"><br><br>
+            input 2:<input type="text" id="d"><br>
+            var c= document.getElementById("c").value;
+                var d= document.getElementById("d").value;
+                var x;
+                which operation(add,subt,mult,div):<input type="text" id="x"><br>
+            <p id="ans"></p>
+            <script>
+                var c= document.getElementById("c").value;
+                var d= document.getElementById("d").value;
+                var x= document.getElementById("x").value;
+            switch(x){
+               case 'add':
+                var e= parseInt(c) + parseInt(d)
+                document.getElementById("ans").innerHTML=c+" + "+d+" = "+e         }
+                break;
+               case "subt":
+                var e= parseInt(c) - parseInt(d)
+                document.getElementById("ans").innerHTML=c+" - "+d+" = "+e          }
+                break;
+            //     case "mult":
+            //         var c= document.getElementById("c").value;
+            //     var d= document.getElementById("d").value;
+            //     var e= parseInt(c) * parseInt(d);
+            //     document.getElementById("ans").innerHTML=c+" * "+d+" = "+e;           }
+            //     break;
+            //     case "div":
+            //     var e= parseInt(c) / parseInt(d);
+            //     document.getElementById("ans").innerHTML=c+" / "+d+" = "+e; 
+            //     break;
+            //     default:
+            //     document.getElementById("ans").innerHTML="invalid entry";
+            //     }          
+        </script>
+        </div>
+    </body>
+</html>

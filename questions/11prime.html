@@ -1,0 +1,32 @@
+<html>
+    <head>CHECK WHETHER PRIME</head><br>
+    <body>
+        enter a number:<input type="txt" id="a">
+        <button onclick="primefn()">click</button>
+        <p id="ans"></p>
+    </body>
+    <script>
+        function primefn(){
+            var a=document.getElementById("a").value
+            for(var i=2;i<parseInt(a);i++){
+                if(a%i==0){
+                 var c="no"
+                 break;
+                }
+                if(a%i!=0){
+                    var c="yes"
+                    break;
+                }
+            }
+            if(c=="yes"){
+                document.getElementById("ans").innerHTML="PRIME!"
+            }
+            else if(c=="no"){
+                document.getElementById("ans").innerHTML="NOT A PRIME!"
+            }
+            else if(parseInt(a)==1){
+                document.getElementById("ans").innerHTML="NEITHER PRIME NOR COMPOSITE"
+            }
+        }
+    </script>
+</html>

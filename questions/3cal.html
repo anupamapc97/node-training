@@ -1,0 +1,28 @@
+<html>
+
+<head>CALCULATE</head><br>
+
+<body>
+    input 1:<input type="text" id="a"><br>
+    input 2:<input typt="text" id="b"><br>
+    <p id="ans"></p>
+    <p id="anss"></p>
+    <button onclick="multiply()">MULTIPLY</button>
+    <button onclick="divide()">DIVIDE</button>
+    <script>
+        function multiply() {
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+            var sum = parseInt(a) * parseInt(b);
+            document.getElementById("ans").innerHTML =a+ "*"+b+"=" + sum
+        }
+        function divide() {
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+            var sum = parseInt(a) / parseInt(b);
+            document.getElementById("anss").innerHTML =a+"/"+b+"=" + sum
+        }
+    </script>
+</body>
+
+</html>

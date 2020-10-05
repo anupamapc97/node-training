@@ -1,7 +1,7 @@
 var fetch = require('node-fetch')
 const { title } = require('process')
 
-process.env['NODE_TL5_REJECT_UNAUTHORIZED'] = 0
+process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 
 async function getApiData() {
     let response = await fetch('https://jsonplaceholder.typicode.com/todos')

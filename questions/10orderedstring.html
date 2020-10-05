@@ -1,0 +1,29 @@
+<html>
+    <head>ALBHABETICAL ORDER</head>
+    <body>
+        enter a string to order it:<input type="text" id="a">
+        <button onclick="func()">click</button>
+        <p id="ans"></p>
+    </body>
+    <script>
+        function func(){
+            var a=document.getElementById("a").value;
+            var b=sortString(a)
+            document.getElementById("ans").innerHTML=b
+        }
+  function sortString(str){
+  var c = str.split('');
+  var tmp;
+  for(var i = 0; i < c.length; i++){
+    for(var j = i + 1; j < c.length; j++){
+      if(c[i] > c[j]){
+        tmp = c[i];
+        c[i] = c[j];
+        c[j] = tmp;
+      }
+    }
+  }
+  return c.join('');
+}
+    </script>
+</html>
